@@ -10,15 +10,17 @@ function init() {
     
     coolText.textContent = "";
      
-    splitText.forEach(letter => {
+    splitText.forEach((letter, index) => {
         const span = document.createElement("span");
         span.classList.add("fade_in");
+        span.style.setProperty("--delay", index);
     
         if (letter === " ") {
             span.innerHTML = "&nbsp;";
         } else {
             span.textContent = letter;
         }
+
         console.log(span);
         coolText.append(span); 
     });

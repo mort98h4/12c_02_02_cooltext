@@ -22,11 +22,13 @@ span {
 }
 
 .fade_in {
+    --delay: 0s;
     animation-name: cooltext_kf;
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(.4,.4,.81,1.16);
     animation-iteration-count: 1;
     animation-fill-mode: both;
+    animation-delay: calc(var(--delay) * 0.1s);
 }
 
 @keyframes cooltext_kf {
