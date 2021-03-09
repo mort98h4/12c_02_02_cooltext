@@ -24,7 +24,7 @@ span {
 .fade_in {
     --delay: 0s;
     animation-name: cooltext_kf;
-    animation-duration: 2s;
+    animation-duration: .5s;
     animation-timing-function: cubic-bezier(.4,.4,.81,1.16);
     animation-iteration-count: 1;
     animation-fill-mode: both;
@@ -33,7 +33,7 @@ span {
 
 @keyframes cooltext_kf {
     0% {
-        transform: translateY(60vh);
+        transform: translateY(10vh);
         opacity: 0;
     }
     100% {
