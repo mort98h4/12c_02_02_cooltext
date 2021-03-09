@@ -10,8 +10,28 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
 }
 
 h1 {
     color: white;
+}
+
+#cooltext {
+    animation-name: cooltext_kf;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.4,.4,.81,1.16);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes cooltext_kf {
+    0% {
+        transform: translateY(60vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
